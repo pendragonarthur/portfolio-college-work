@@ -1,6 +1,6 @@
 # portfolio-college-work
 Trabalho da faculdade da matéria Hands on Work II. 
-Alunos: Arthur Quaresma, Mauro Luiz Sorgatto Amâncio, Cesar Mickael Silva, Jonathan Cavalheiro de Lima.
+Alunos: Arthur Quaresma, Mauro Luiz Sorgatto Amâncio, Cesar Mickael Silva, Jonathan Cavalheiro de Lima, Vitor Augusto Belucci Silva.
 -----------------------------------------------------------------
 
 Prototipagem das interfaces.
