@@ -13,30 +13,58 @@ img {
     height: auto;
 }
 
+/*-----------------VARIABLES--------------*/
+:root { 
+    --hue: 159;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl( 0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+}
+
 /* ---------------- LAYOUT ------------------ */
 
 #header { 
-    height: 4.5rem;
-
-}
-
-/* ---------------- BASE ------------------ */
-body {
-    font: 400 1rem "DM Sans", sans-serif;
-}
-
-h1 { 
-    font: 700 1.875rem "Poppins", sans-serif;
+    border-bottom: 1px solid #E4E4E4;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
 }
+
 
 .logo { 
-
+    color: var(--title-color);
+    font: 700 1.31rem "Poppins", sans-serif;
 }
+
+.logo span {
+    color: var(--base-color);
+}
+
+
+/* ---------------- BASE ------------------ */
+body {
+    font: 400 1rem "DM Sans", sans-serif;
+    background: var(--body-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 { 
+    font: 700 1.875rem "Poppins", sans-serif;
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+}
+
+
 
 .container { 
     width: 100%;
@@ -44,5 +72,41 @@ nav {
     margin-right: 1.5rem;
 }
 
+.grid { 
+    display: grid;
+    gap: 2rem;
+}
+
+.section { 
+    padding: 5rem 0;
+}
 
 /* ---------------- HOME ------------------ */
+
+#home .container {
+    margin: 0;
+}
+
+#home .image { 
+    position: relative;
+}
+
+#home .image::before { 
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background: red;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#home .image img { 
+    position: relative;
+    right: 2.93rem;
+}
+
+#home .text { 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
