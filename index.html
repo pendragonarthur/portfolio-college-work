@@ -13,9 +13,21 @@
 </head>
 <body>
     <header id="header">
-        <nav class="container">
+        <nav class="container show">
             <a class="logo" href="#">myport<span>folio</span>.</a>
-            <div class="menu">...</div>
+            <!--MENU-->
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#home">Inicio</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <!--MENU-->
+            <div class="open">...</div>
+            <div class="close">X</div>
         </nav>
         
     </header>
@@ -26,7 +38,7 @@
                 <img src="photo.jpg" alt="foto genérica de dev">
             </div>
             <div class="text">
-                <h1>FullStack Developer</h1>
+                <h2 class="title">FullStack Developer</h2>
             <p>Experiência de alto nível em desenvolvimento de software, produção e trabalho de qualidade.</p>
             <a class="button"href="#">Entre em contato!</a>
             </div>
@@ -35,8 +47,16 @@
 
         <div class="divider-1"></div>
 
-        <section class="section"></section>
-        <section class="section"></section> 
+        <section class="section" id="about">
+            <div class="container grid">
+                Sobre
+            </div>
+        </section>
+        <section class="section" id="services">
+            <div class="container grid">
+                Serviços
+            </div>
+        </section> 
         <section class="section"></section> 
         <section class="section"></section> 
     </main>

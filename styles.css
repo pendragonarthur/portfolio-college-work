@@ -15,6 +15,7 @@ img {
 
 /*-----------------VARIABLES--------------*/
 :root { 
+    --header-height: 4.5rem;
     --hue: 159;
     /* HSL color mode */
     --base-color: hsl(var(--hue) 36% 57%);
@@ -54,14 +55,12 @@ img {
     left: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 4.5rem;
-    align-items: center;
-    width: 100%;
+main { 
+    margin-top: calc(var(--header-height) + 2rem);
 }
 
+
+/* ---------------- LOGO ------------------ */
 
 .logo { 
     color: var(--title-color);
@@ -72,10 +71,40 @@ nav {
     color: var(--base-color);
 }
 
-main { 
-    margin-top: 4.5rem;
+
+/* ---------------- NAVIGATION ------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
+    width: 100%;
 }
 
+nav .menu { 
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul.grid {
+    gap: 4rem;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav.show .menu { 
+    opacity: 1;
+    visibility: visible;
+    background: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 /* ---------------- BASE ------------------ */
 body {
@@ -85,7 +114,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1 { 
+.title { 
     font: 700 1.875rem "Poppins", sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
