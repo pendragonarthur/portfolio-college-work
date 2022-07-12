@@ -28,8 +28,30 @@ img {
 
 /* ---------------- LAYOUT ------------------ */
 
+.container { 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid { 
+    display: grid;
+    gap: 2rem;
+}
+
+.section { 
+    padding: 5rem 0;
+}
+
 #header { 
     border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
 }
 
 nav {
@@ -49,6 +71,10 @@ nav {
     color: var(--base-color);
 }
 
+main { 
+    margin-top: 4.5rem;
+}
+
 
 /* ---------------- BASE ------------------ */
 body {
@@ -64,24 +90,35 @@ h1 {
     -webkit-font-smoothing: auto;
 }
 
-
-
-.container { 
-    width: 100%;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.button { 
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: .25rem;
+    font: 500 1rem "DM Sans", sans-serif;
 }
 
-.grid { 
-    display: grid;
-    gap: 2rem;
+.button:hover { 
+    cursor: pointer;
+    background: var(--base-color-alt);
+    transition: background .3s;
 }
 
-.section { 
-    padding: 5rem 0;
+.divider-1 { 
+    height: 1px;
+    background: linear-gradient(270deg, 
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%);
 }
 
 /* ---------------- HOME ------------------ */
+
+#home { 
+    overflow: hidden;
+}
 
 #home .container {
     margin: 0;
@@ -92,12 +129,19 @@ h1 {
 }
 
 #home .image::before { 
-    content: "";
-    height: 2rem;
-    width: 2rem;
-    background: red;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
     position: absolute;
-    z-index: 1;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#home .image img, 
+#home .image::before { 
+    border-radius: 0.25rem;
 }
 
 
@@ -109,4 +153,13 @@ h1 {
 #home .text { 
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home .text h1 { 
+    margin-bottom: 1rem;
+}
+
+#home .text p { 
+    margin-bottom: 2rem;
 }
