@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/95f521e237.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
     <header id="header">
-        <nav class="container show">
+        <nav class="container ">
             <a class="logo" href="#">myport<span>folio</span>.</a>
             <!--MENU-->
             <div class="menu">
@@ -26,8 +28,8 @@
                 </ul>
             </div>
             <!--MENU-->
-            <div class="open">...</div>
-            <div class="close">X</div>
+            <div class="toggle icon-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="toggle icon-menu"><i class="fa-solid fa-bars"></i></div>
         </nav>
         
     </header>
@@ -49,7 +51,15 @@
 
         <section class="section" id="about">
             <div class="container grid">
-                Sobre
+                <div class="image">
+                    <img src="photo2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2 class="title">Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, error laborum. Dolores dolorem, placeat nam cum veritatis voluptates sequi rem obcaecati doloribus magnam neque! Voluptatem eaque magnam ab omnis eveniet!</p> <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quibusdam cumque earum expedita neque officia nesciunt vel tempore necessitatibus, corporis magni quo? Quos vero ad repellendus incidunt quam aspernatur similique.</p> <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium nobis laudantium cupiditate velit. Repellat facilis accusantium consectetur suscipit vero itaque sunt aliquid vel, nam dolore, perspiciatis nisi tempora alias porro.</p>
+                </div>
             </div>
         </section>
         <section class="section" id="services">
@@ -62,8 +72,6 @@
     </main>
     <footer></footer> 
     
+    <script src="main.js"></script>
 </body>
-
-
-<script src="main.js"></script>
 </html>
